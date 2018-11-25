@@ -19,12 +19,17 @@
         </ul>
         <ul class="user-navigation">
           <li class="login-link">Вход</li>
+          <li>
+            <form action="" method="post">
+              <input type="button" value="Вход">
+            </form>
+          </li>
         </ul>
       </nav>
     </header>
     <main class="container">
       <h1 class="page-title">Cредства для ухода</h1>
-      
+
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Магазин</a></li>
@@ -32,9 +37,36 @@
       </ul>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
+        <ul>
+          <li>
+            <h3>Производители:</h3>
+              <form action="" method="post">
+                <label><input type="radio" name="manufacturers" value="baxter of california" id="baxter of california" checked>Baxter of California</label>
+                <label><input type="radio" name="manufacturers" value="mr natty" id="mr natty">Mr Natty</label>
+                <label><input type="radio" name="manufacturers" value="Suavecito" id="suavecito" checked>Suavecito</label>
+                <label><input type="radio" name="manufacturers" value="malin+goetz" id="malin+goetz">Malin+Goetz</label>
+                <label><input type="radio" name="manufacturers" value="murray's" id="murray's">Murray's</label>
+                <label><input type="radio" name="manufacturers" value="american crew" id="american crew" checked>American crew</label>
+              </form>
+          </li>
+          <li>
+            <h3>Группы товаров:</h3>
+              <form action="" method="post">
+                <label><input type="radio" name="productgroups" value="бритвенные пренадлежности" id="бритвенные пренадлежности">Бритвенные пренадлежности</label>
+                <label><input type="radio" name="productgroups" value="средства для ухода" id="средства для ухода" checked>Средства для ухода</label>
+                <label><input type="radio" name="productgroups" value="аксессуары" id="аксессуары">Аксессуары</label>
+              </form>
+          </li>
+          <li>
+            <form>
+              <input type="button" value="Показать">
+            </form>
+          </li>
+        </ul>
+
         <!-- Здесь будет форма -->
       </section>
-      
+
       <section class="catalog">
         <h2 class="visually-hidden">Список средств для ухода</h2>
         <ul class="catalog-list">
@@ -168,7 +200,7 @@
         <b>Разработано:</b> <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
       </p>
     </footer>
-    
+
     <section class="modal modal-login">
       <h2>Личный кабинет</h2>
       <p>Введите свой логин и пароль.</p>
