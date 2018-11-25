@@ -63,8 +63,6 @@
             </form>
           </li>
         </ul>
-
-        <!-- Здесь будет форма -->
       </section>
 
       <section class="catalog">
@@ -204,7 +202,13 @@
     <section class="modal modal-login">
       <h2>Личный кабинет</h2>
       <p>Введите свой логин и пароль.</p>
-      <!-- Здесь будет форма -->
+      <form action="" method="post">
+        <input type="text" name="login" id="login" value="Логин">
+        <input type="password" name="password" id="password" value="Пароль">
+        <label><input type="checkbox" name="rememberme" checked>Запомните меня</label>
+        <a href="">Я забыл пароль!</a>
+        <input type="button" value="войти">
+      </form>
       <span class="modal-close">x</span>
     </section>
   </body>
